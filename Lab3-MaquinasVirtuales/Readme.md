@@ -37,6 +37,7 @@ Objetivos:
  ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-3.png)
  
  > **Nota:** Use el Portapapeles de NoVNC para facilitar la copia dentro y fuera de la Terminal. De ahora en adelante, siempre que necesites copiar/pegar algo a la Terminal, y también desde la Terminal hacia afuera, usa el Portapapeles.
+ 
  ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-4.png)
 
 2. Para crear el par de llaves usamos el comando:
@@ -62,13 +63,12 @@ Objetivos:
   * Seleccione el contenido en la terminal y utilice el botón derecho del mouse para copiarlo.
     ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-7.png)
 
-  * Seleccione, copie y pegue el cnotenido de esta llave en el Portapapeles/Clipboard como se muestra en la imagen de abajo, y si es posible guárdelo en un bloc de notas, hya que lo usaremos para crear las máquinas virtuales Linux.
+  * Seleccione, copie y pegue el cnotenido de esta llave en el Portapapeles/Clipboard como se muestra en la imagen de abajo, y si es posible guárdelo en un bloc de notas, ya que lo usaremos para crear las máquinas virtuales Linux.
     ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-8.png)
 
     
   _Para la creación de la VM, usaremos una llave pública y para la conexión, usaremos la llave privada_
-
-   ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-4.png)
+  
      
 ### Paso 2: Crear 2 máquinas virtuales Oracle Linux
 
