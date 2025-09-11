@@ -36,7 +36,7 @@ Objetivos:
  Si la terminal no está abierta, puede abrirla nuevamente.
  ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-3.png)
  
- Nota: Use el Portapapeles de NoVNC para facilitar la copia dentro y fuera de la Terminal. De ahora en adelante, siempre que necesites copiar/pegar algo a la Terminal, y también desde la Terminal hacia afuera, usa el Portapapeles.
+ > **Nota:** Use el Portapapeles de NoVNC para facilitar la copia dentro y fuera de la Terminal. De ahora en adelante, siempre que necesites copiar/pegar algo a la Terminal, y también desde la Terminal hacia afuera, usa el Portapapeles.
  ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-4.png)
 
 2. Para crear el par de llaves usamos el comando:
