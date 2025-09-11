@@ -32,6 +32,12 @@ Objetivos:
 
  ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-1.png)
  ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-2.png)
+ 
+ Si la terminal no está abierta, puede abrirla nuevamente.
+ ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-3.png)
+ 
+ Nota: Use el Portapapeles de NoVNC para facilitar la copia dentro y fuera de la Terminal. De ahora en adelante, siempre que necesites copiar/pegar algo a la Terminal, y también desde la Terminal hacia afuera, usa el Portapapeles.
+ ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-4.png)
 
 2. Para crear el par de llaves usamos el comando:
 
@@ -40,8 +46,9 @@ Objetivos:
    ```
    - Mantenga el nombre original de la llave (id_rsa) aprentando enter
    - El campo "Key Passphrase" es opcional
+   - Click "ENTER" nuevamente para finalizar la creación
 
-   ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-1.png)
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-5.png)
 
 3. Para ver el contenido de la llave pública, ejecuta este comando:
    
@@ -50,12 +57,15 @@ Objetivos:
    ```
   > **Nota:** Si no sabes la combinación de teclas para el símbolo "~" (virgulilla), busca el símbolo y copialo en el área de transferencia del Escritorio Remoto. Luego de ello, pégalo dentro del terminal usando _clic derecho + pegar_. Puedes hacer esto para facilitar el copiado/pegado de texto entre tu escritorio y el escritorio remoto.
 
-   ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-3.png)
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-6.png)
 
-  * Selecciona y copia el contenido de la llave. Usaremos esto para la creación de las máquinas virtuales. Recuerda copiar el texto en el área de transferencia del Escritorio Remoto
+  * Seleccione el contenido en la terminal y utilice el botón derecho del mouse para copiarlo.
+    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-7.png)
+
+  * Seleccione, copie y pegue el cnotenido de esta llave en el Portapapeles/Clipboard como se muestra en la imagen de abajo, y si es posible guárdelo en un bloc de notas, hya que lo usaremos para crear las máquinas virtuales Linux.
+    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-8.png)
+
     
-    ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-2.png)
-
   _Para la creación de la VM, usaremos una llave pública y para la conexión, usaremos la llave privada_
 
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-4.png)
