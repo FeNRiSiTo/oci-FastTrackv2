@@ -126,12 +126,14 @@ Objetivos:
 
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-22.png)
 
-   Su instancia se creará correctamente en unos minutos. Una vez finalizado el proceso de creación, la pantalla principal se verá asi:
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-23.png)
+
+   Su instancia se creará correctamente en unos minutos. Una vez finalizado el proceso de creación, la pantalla principal se verá asi:
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/vm-running.png)
 
      
 
-5. Realizamos los mismos pasos para crear la VM2. La crearemos en el AD que queda disponible.
+6. Realizamos los mismos pasos para crear la VM2. La crearemos en el AD que queda disponible.
    Estos serán los datos de su instancia:
     * Nombre de tu instancia: VM-OracleLinux-2
     * Availability Domain (AD): Seleccione AD que falta, es decir, que no esté siendo utilizado por la VM NoVNC o por VM-OracleLinux-1
