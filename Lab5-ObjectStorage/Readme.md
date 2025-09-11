@@ -53,20 +53,20 @@ b.	**Default Storage Tier:** Standard.
 3.	Copie el html a continuación y cree el archivo index.html usando un editor de texto (bloc de notas) Nota: Recuerda guardar el archivo con la extensión ".html" 
     ```sh
         <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAB: OCI FAST TRACK</title>
-</head>
-<body>
-    <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/idpjrkxadvns/b/bucket-fast-track/o/ocifasttracklogo.jpg"
- alt="LOGO OCI FAST TRACK">
-            <h1>Site estático no Object Storage</h1> 
-            <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/idpjrkxadvns/b/bucket-fast-track/o/site.gif"
-    </center>   
-</body>
-</html>
+        <html lang="pt-br">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LAB: OCI FAST TRACK</title>
+        </head>
+        <body>
+        <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/idpjrkxadvns/b/bucket-fast-track/o/ocifasttracklogo.jpg"
+        alt="LOGO OCI FAST TRACK">
+        <h1>Site estático no Object Storage</h1> 
+        <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/idpjrkxadvns/b/bucket-fast-track/o/site.gif"
+        </center>   
+        </body>
+        </html>
 
     ```
 
