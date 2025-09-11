@@ -73,17 +73,17 @@ b.	**Default Storage Tier:** Standard.
 
 4.	Una vez hecho esto, arrástrelo y suéltelo en el campo del depósito indicado y haga clic en **Upload**.
 
- ![imagen](../Lab5-ObjectStorage/Imagenes/Imagen20.png)
+ ![imagen](../Lab5-ObjectStorage/Imagenes/bucket-6.png)
 
 5.	Para el objeto, haga clic en el icono de tres puntos y haga clic en **View Object Details**.
 
-![imagen](../Lab5-ObjectStorage/Imagenes/Imagen21.png) 
+![imagen](../Lab5-ObjectStorage/Imagenes/bucket-7.png)
 
 6. Haga clic en el URI indicado y verifique si el sitio está disponible. 
 
-![imagen](../Lab5-ObjectStorage/Imagenes/Imagen22.png) 
+![imagen](../Lab5-ObjectStorage/Imagenes/bucket-8.png)
 
-![imagen](../Lab5-ObjectStorage/Imagenes/Imagen23.png) 
+![imagen](../Lab5-ObjectStorage/Imagenes/bucket-9.png)
 
 **Super! Continuemos con el siguiente laboratorio 🤩👉 [Laboratorio 6 - Load Balancer](https://github.com/kapvar9/oci-FastTrack-infraestructura/blob/main/Lab6-LoadBalancer/Readme.md)**
    
