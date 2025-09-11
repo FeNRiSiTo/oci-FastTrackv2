@@ -44,7 +44,7 @@ c.	**Enable Object Versioning:** Activado.
 
 ![imagen](../Lab5-ObjectStorage/Imagenes/Imagen18.png)
 
-### Tarea 3: Formatear el Block Volume y montar en la instancia
+### Tarea 3: Disponibilizar sitio web estático desde el bucket creado
 
 1. Ingrese a su Bucket.
 2. Haga clic en **Objects**, en el menú del izquierdo, y de cluc en **Upload**
