@@ -80,7 +80,8 @@ Objetivos:
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-10.png)
 
    > **Nota:** Antes de crear las instancias, verifique en que AD se creo su máquina NoVNC y luego use los otros 2 AD para crear las máquinas virtuales
-   Ejemplo: en la imagen a continuación, puede ver que la máquina NoVNC se creó en AD-2, esto significa que aún puede usar los AD-1 y AD-3 para crear cada una de las máquinas. Este diagraa solo se aplica al entorno sandbox del taller LiveLabs. En entornos reales, puede crear recursos en cualquier AD, siempre que se cumplan los límites y políticas necesarias.
+   
+   > **Ejemplo:** en la imagen a continuación, puede ver que la máquina NoVNC se creó en AD-2, esto significa que aún puede usar los AD-1 y AD-3 para crear cada una de las máquinas. Este diagraa solo se aplica al entorno sandbox del taller LiveLabs. En entornos reales, puede crear recursos en cualquier AD, siempre que se cumplan los límites y políticas necesarias.
 
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-11.png)
 
