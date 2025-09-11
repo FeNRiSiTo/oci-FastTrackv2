@@ -45,7 +45,7 @@ b.	**Default Storage Tier:** Standard.
 
 ![imagen](../Lab5-ObjectStorage/Imagenes/bucket-5.png)
 
-### Tarea 3: Disponibilizar sitio web estático
+### Tarea 3: Disponibilizar sitio web estático.
 
 1. Ingrese a su Bucket.
 2. Haga clic en **Objects**, en el menú del izquierdo, y de click en **Upload**
