@@ -22,52 +22,51 @@ En este laboratorio aprenderá cómo trabajar con Object Storage dentro de Oracl
 
 1. En el menú principal, de clic en la sección de **Storage** y posteriormente dirígete a **Buckets** 
 
-![imagen](../Lab5-ObjectStorage/Imagenes/Imagen14.png)
+![imagen](../Lab5-ObjectStorage/Imagenes/bucket-1.png)
 
 2.	Luego haga clic en **Create Bucket**.
 
-![imagen](../Lab5-ObjectStorage/Imagenes/Imagen15.png)
+![imagen](../Lab5-ObjectStorage/Imagenes/bucket-2.png)
 
 3. Complete el formulario como se muestra a continuación y haga clic en **Create**
 a.	**Bucket Name:** "Ingrese un nombre para su Bucket".
 b.	**Default Storage Tier:** Standard. 
-c.	**Enable Object Versioning:** Activado.
 
-![imagen](../Lab5-ObjectStorage/Imagenes/Imagen16.png)
+![imagen](../Lab5-ObjectStorage/Imagenes/bucket-3.png)
 
 ### Tarea 2: Configuración de Bucket.
 1.	En su Bucket, haga clic en el ícono de tres puntos y luego seleccione la opción **Edit Visibility**.
 
-![imagen](../Lab5-ObjectStorage/Imagenes/Imagen17.png)
+![imagen](../Lab5-ObjectStorage/Imagenes/bucket-4.png)
 
 2.	Cambie la visibilidad a "Public", desmarque la opción "Allow users to list objects from this bucket" y haga clic en **Save Changes.**
 
-![imagen](../Lab5-ObjectStorage/Imagenes/Imagen18.png)
+![imagen](../Lab5-ObjectStorage/Imagenes/bucket-5.png)
 
 ### Tarea 3: Disponibilizar sitio web estático
 
 1. Ingrese a su Bucket.
-2. Haga clic en **Objects**, en el menú del izquierdo, y de cluc en **Upload**
+2. Haga clic en **Objects**, en el menú del izquierdo, y de click en **Upload**
  
- ![imagen](../Lab5-ObjectStorage/Imagenes/Imagen19.png) 
+ ![imagen](../Lab5-ObjectStorage/Imagenes/bucket-5.png)
 
 3.	Copie el html a continuación y cree el archivo index.html usando un editor de texto (bloc de notas) Nota: Recuerda guardar el archivo con la extensión ".html" 
     ```sh
         <!DOCTYPE html>
-        <html lang="pt-br">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>LAB: OCI FAST TRACK</title>
-        </head>
-        <body>
-            <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/id3kyspkytmr/b/workshops-materiais/o/ocifasttracklogo.jpg"
-         alt="LOGO OCI FAST TRACK">
-                    <h1>Site estático no Object Storage</h1> 
-                    <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/id3kyspkytmr/b/workshops-materiais/o/site.gif"
-            </center>   
-        </body>
-        </html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB: OCI FAST TRACK</title>
+</head>
+<body>
+    <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/idpjrkxadvns/b/bucket-fast-track/o/ocifasttracklogo.jpg"
+ alt="LOGO OCI FAST TRACK">
+            <h1>Site estático no Object Storage</h1> 
+            <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/idpjrkxadvns/b/bucket-fast-track/o/site.gif"
+    </center>   
+</body>
+</html>
 
     ```
 
