@@ -160,6 +160,9 @@ Objetivos:
   2. En la terminal de la VM NoVNC, conectese a la máquina creada (VM-OracleLinux1) usando el siguiente comando:
 
      ```
+     ssh opc@<ip privada VM>
+     la llave ya se encuentra registrada a nivel de SO
+     en caso de que de algún problema probar lo siguiente:
      ssh -i <llave privada ssh> opc@<ip privada VM> // ejemplo: ssh -i id_rsa opc@10.0.0.94
      ```
 
