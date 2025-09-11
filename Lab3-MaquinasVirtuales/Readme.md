@@ -176,6 +176,10 @@ Objetivos:
   
   3. Al completar esta tarea, verá que ahora tenemos 2 instancias de computo creadas junto con la instancia NoVNC, cada una en su propio dominio de disponibilidad (AD)
 
+     ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-27.png)
+
+     
+
      **Super! Continuemos con el siguiente laboratorio 🤩👉 [Laboratorio 4 - Block Volume](https://github.com/kapvar9/oci-FastTrack-infraestructura/blob/main/Lab5-ObjectStorage/Readme.md)**
    
    
