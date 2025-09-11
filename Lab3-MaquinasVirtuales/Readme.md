@@ -30,9 +30,8 @@ Objetivos:
 
 1. Acceda al escritorio remoto en su VCN haciendo click en <Launch Remote Desktop> o simplemente acceda a la pestaña <NoVCN> si ya está abierta. 
 
- ### ![imagen](../PrimerosPasos/imagenes/paso23.png)
- ![imagen](../PrimerosPasos/imagenes/compute_1.png)
- ![imagen](../PrimerosPasos/imagenes/compute_2.png)
+ ![imagen](../PrimerosPasos/imagenes/compute-1.png)
+ ![imagen](../PrimerosPasos/imagenes/compute-2.png)
 
 2. Para crear el par de llaves usamos el comando:
 
