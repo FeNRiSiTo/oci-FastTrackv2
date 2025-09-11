@@ -99,53 +99,50 @@ Objetivos:
 
      Llena los datos según lo indicado. **Recuerda que ya tienes un compartment creado por defecto. Debes elegir ese** 🤓☝️
    
-      ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-12.png)
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-12.png)
 
-  2. Después de expandir las opciones de Shapes and Network, ingrese los datos necesarios para concluir el proceso de creación
-      ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-13.png)
+2. Después de expandir las opciones de Shapes and Network, ingrese los datos necesarios para concluir el proceso de creación
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-13.png)
+
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-14.png)
+
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-15.png)
+
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-16.png)
+
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-17.png)
+
+
+3. Al ingresar la información de Networking, recuerda elegir tu VCN (Lab2), tu Subnet pública (Lab2) y la opción "Automatically assign public IPv4 address"
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-18.png)
   
 
-4. Elige la imagen y el shape de tu MV. Haz clic en _"Change Image"_ para cambiar la imagen y en _"Change shape"_ para cambiar el shape
+4. Copie desde el Portapapeles/Clipboard y pegue la llave pública SSH creada por usted en la Tarea 1 de este laboratorio como se muestra en la imagen a continuación y haga click en "Create"
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-19.png)
 
-   ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-8.png)
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-20.png)
 
-   - Cambiar imagen
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-21.png)
+
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-22.png)
+
+   Su instancia se creará correctamente en unos minutos. Una vez finalizado el proceso de creación, la pantalla principal se verá asi:
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-23.png)
+
      
-     ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-9.png)
 
-    - Cambiar shape
-
-     ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-10.png)
-     ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-11.png)
-
-   _Resultado_
-
-    ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-12.png)
-
-5. Selecciona la VCN y la subnet pública creadas por defecto, y eliga la opción de _"Asignar una dirección IPv4 pública"_
-
-   ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-13.png)
-
-6. Colocamos la llave pública SSH creada en el paso 3 y clic en _"Create"_
-
-   ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-14.png)
-
-  Tu instancia tomará unos minutos en crearse. Si esta todo OK🤞, quedará como la imagen ⤵️
-  
-  ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-15.png)
-
-6. Realizamos los mismos pasos para crear la MV2. La crearemos en el AD restante.
-   Estos serán los datos de tu instancia:
-    * Nombre de tu instancia: VM-OracleLinux-AD3
-    * Dominio de Disponibilidad: AD 3
-    * Sistema Operativo: Oracle Linux 7.9
-    * Tipo de Instancia: Máquina Virtual
-    * Forma de la Instancia: AMD VM.Standard.E4.Flex
-    * Elija el Archivo de Clave SSH: Inserta el archivo de clave pública SSH (.pub)
-    * Compartimento de la Red de Nube Virtual: "Tu Compartimento"
-    * Red de Nube Virtual: "Tu VCN"
-    * Compartimento de Subred: "Tu Compartimento"
-    * Subred: Subred Pública
+5. Realizamos los mismos pasos para crear la VM2. La crearemos en el AD que queda disponible.
+   Estos serán los datos de su instancia:
+    * Nombre de tu instancia: VM-OracleLinux-2
+    * Availability Domain (AD): Seleccione AD que falta, es decir, que no esté siendo utilizado por la VM NoVNC o por VM-OracleLinux-1
+    * Sistema Operativo: Oracle Linux 8
+    * Tipo de Instancia: Virtual Machine
+    * Instance Shape: AMD VM.Standard.E4.Flex
+    * Elija llave SSH: Insertar archivo de clave pública SSH (.pub)
+    * Virtual Cloud Network Copartment: "Su Compartimento"
+    * Virtual Cloud Network: "Tu VCN"
+    * Subnet Compartment: "Tu Compartimento" (Creado por defecto en el ambiente)
+    * Subnet: Subred Pública
 
   ### Paso 3: Acceder a la VM por el terminal
 
