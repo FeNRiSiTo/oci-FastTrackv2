@@ -16,7 +16,7 @@ En este laboratorio aprenderá cómo trabajar con Object Storage dentro de Oracl
 ### Pasos
 - [Tarea 1: Crear un Bucket](#tarea-1-crear-un-bucket)
 - [Tarea 2: Configuración de Bucket](#tarea-2-configuración-de-bucket)
-- [Tarea 3: Disponibilizar sitio web estático desde el bucket creado](#tarea-3-disponiblizar-sitio-web-estatico)
+- [Tarea 3: Disponibilizar sitio web estático](#tarea-3-disponiblizar-sitio-web-estatico)
 
 ### Tarea 1: Crear un Bucket.
 
@@ -44,7 +44,7 @@ c.	**Enable Object Versioning:** Activado.
 
 ![imagen](../Lab5-ObjectStorage/Imagenes/Imagen18.png)
 
-### Tarea 3: Disponibilizar sitio web estático desde el bucket creado
+### Tarea 3: Disponibilizar sitio web estático
 
 1. Ingrese a su Bucket.
 2. Haga clic en **Objects**, en el menú del izquierdo, y de cluc en **Upload**
