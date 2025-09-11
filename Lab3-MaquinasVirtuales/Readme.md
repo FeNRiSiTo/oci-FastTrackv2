@@ -90,7 +90,7 @@ Objetivos:
     * Availability Domain (AD): Elija uno que no esté siendo utilizado por la VM NoVNC
     * Sistema Operativo: Oracle Linux 8
     * Tipo de Instancia: Virtual Machine
-    * Instance Shape: AMD VM.Standard.E4.Flex
+    * Instance Shape: AMD VM.Standard.E5.Flex
     * Elija llave SSH: Insertar archivo de clave pública SSH (.pub)
     * Virtual Cloud Network Copartment: "Su Compartimento"
     * Virtual Cloud Network: "Tu VCN"
@@ -137,7 +137,7 @@ Objetivos:
     * Availability Domain (AD): Seleccione AD que falta, es decir, que no esté siendo utilizado por la VM NoVNC o por VM-OracleLinux-1
     * Sistema Operativo: Oracle Linux 8
     * Tipo de Instancia: Virtual Machine
-    * Instance Shape: AMD VM.Standard.E4.Flex
+    * Instance Shape: AMD VM.Standard.E5.Flex
     * Elija llave SSH: Insertar archivo de clave pública SSH (.pub)
     * Virtual Cloud Network Copartment: "Su Compartimento"
     * Virtual Cloud Network: "Tu VCN"
