@@ -16,7 +16,7 @@ En este laboratorio aprenderá cómo trabajar con Object Storage dentro de Oracl
 ### Pasos
 - [Tarea 1: Crear un Bucket](#tarea-1-crear-un-bucket)
 - [Tarea 2: Configuración de Bucket](#tarea-2-configuración-de-bucket)
-- [Tarea 3: Disponibilizar sitio web estático](#tarea-2-configuración-de-bucket)
+- [Tarea 3: Disponibilizar sitio web estático](#tarea-3-disponibilizar-sitio-web-estático)
 
 ### Tarea 1: Crear un Bucket.
 
