@@ -28,7 +28,8 @@ En este laboratorio aprenderá cómo trabajar con Object Storage dentro de Oracl
 
 ![imagen](../Lab5-ObjectStorage/Imagenes/bucket-2.png)
 
-3. Complete el formulario como se muestra a continuación y haga clic en **Create**
+3. Complete el formulario como se muestra a continuación y haga clic en **Create**.
+   
 a.	**Bucket Name:** "Ingrese un nombre para su Bucket".
 b.	**Default Storage Tier:** Standard. 
 
