@@ -28,7 +28,7 @@ Objetivos:
 
 ### Paso 1: Crear un par de llaves SSH
 
-1. Acceda al escritorio remoto en su VCN haciendo click en <Launch Remote Desktop> o simplemente acceda a la pestaña <NoVNC> si ya está abierta. 
+1. Acceda al escritorio remoto en su VCN haciendo click en **Launch Remote Desktop** o simplemente acceda a la pestaña <NoVNC> si ya está abierta. 
 
  ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-1.png)
  ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-2.png)
@@ -72,7 +72,7 @@ Objetivos:
      
 ### Paso 2: Crear 2 máquinas virtuales Oracle Linux
 
-1. Volviendo a la consola de OCI, en el menú principal, haga click en: Compute > Instances , a continuación "Create Instance"
+1. Volviendo a la consola de OCI, en el menú principal, haga click en: Compute > Instances , a continuación **Create Instance**
    > **Nota:** Verificar que su compartimiento esté seleccionado antes de crear la instancia
 
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-9.png)
@@ -113,11 +113,11 @@ Objetivos:
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-17.png)
 
 
-3. Al ingresar la información de Networking, recuerda elegir tu VCN (Lab2), tu Subnet pública (Lab2) y la opción "Automatically assign public IPv4 address"
+3. Al ingresar la información de Networking, recuerda elegir tu VCN (Lab2), tu Subnet pública (Lab2) y la opción **Automatically assign public IPv4 address**
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-18.png)
   
 
-4. Copie desde el Portapapeles/Clipboard y pegue la llave pública SSH creada por usted en la Tarea 1 de este laboratorio como se muestra en la imagen a continuación y haga click en "Create"
+4. Copie desde el Portapapeles/Clipboard y pegue la llave pública SSH creada por usted en la Tarea 1 de este laboratorio como se muestra en la imagen a continuación y haga click en **Create**
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-19.png)
 
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-20.png)
@@ -163,12 +163,12 @@ Objetivos:
      ssh -i <llave privada ssh> opc@<ip privada VM> // ejemplo: ssh -i id_rsa opc@10.0.0.94
      ```
 
-     * El usuario por defecto de las instancias Linux es OPC
+     * El usuario por defecto de las instancias Linux es **opc**
      * Pruebe también el acceso a la VM-OracleLinux-2 posteriormente
 
      ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-26.png)
 
-     > **Nota:** Para desconectarse de la VM en el terminal NoVNC utilice el comando <logout>
+     > **Nota:** Para desconectarse de la VM en el terminal NoVNC utilice el comando **logout**
   
   
   3. Al completar esta tarea, verá que ahora tenemos 2 instancias de computo creadas junto con la instancia NoVNC, cada una en su propio dominio de disponibilidad (AD)
