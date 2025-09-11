@@ -28,7 +28,7 @@ Objetivos:
 
 ### Paso 1: Crear un par de llaves SSH
 
-1. Acceda al escritorio remoto en su VCN haciendo click en <Launch Remote Desktop> o simplemente acceda a la pestaña <NoVCN> si ya está abierta. 
+1. Acceda al escritorio remoto en su VCN haciendo click en <Launch Remote Desktop> o simplemente acceda a la pestaña <NoVNC> si ya está abierta. 
 
  ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-1.png)
  ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-2.png)
@@ -77,29 +77,32 @@ Objetivos:
 
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-9.png)
    
-3. En "Compute", haz clic en _"Create Instance"_, recuerda verificar que te encuentras en tu compartment correspondiente
-   
-   ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-5.png)
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-10.png)
+
+   > **Nota:** Antes de crear las instancias, verifique en que AD se creo su máquina NoVNC y luego use los otros 2 AD para crear las máquinas virtuales
+   Ejemplo: en la imagen a continuación, puede ver que la máquina NoVNC se creó en AD-2, esto significa que aún puede usar los AD-1 y AD-3 para crear cada una de las máquinas. Este diagraa solo se aplica al entorno sandbox del taller LiveLabs. En entornos reales, puede crear recursos en cualquier AD, siempre que se cumplan los límites y políticas necesarias.
+
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-11.png)
 
     Estos serán los datos de tu instancia:
-    * Nombre de tu instancia: VM-OracleLinux-AD2
-    * Dominio de Disponibilidad: AD 2
-    * Sistema Operativo: Oracle Linux 7.9
-    * Tipo de Instancia: Máquina Virtual
-    * Forma de la Instancia: AMD VM.Standard.E4.Flex
-    * Elija el Archivo de Clave SSH: Inserta el archivo de clave pública SSH (.pub)
-    * Compartimento de la Red de Nube Virtual: "Tu Compartimento"
-    * Red de Nube Virtual: "Tu VCN"
-    * Compartimento de Subred: "Tu Compartimento" (Creado por defecto en el ambiente)
-    * Subred: Subred Pública
+    * Nombre de tu instancia: VM-OracleLinux-1
+    * Availability Domain (AD): Elija uno que no esté siendo utilizado por la VM NoVNC
+    * Sistema Operativo: Oracle Linux 8
+    * Tipo de Instancia: Virtual Machine
+    * Instance Shape: AMD VM.Standard.E4.Flex
+    * Elija llave SSH: Insertar archivo de clave pública SSH (.pub)
+    * Virtual Cloud Network Copartment: "Su Compartimento"
+    * Virtual Cloud Network: "Tu VCN"
+    * Subnet Compartment: "Tu Compartimento" (Creado por defecto en el ambiente)
+    * Subnet: Subred Pública
 
      Llena los datos según lo indicado. **Recuerda que ya tienes un compartment creado por defecto. Debes elegir ese** 🤓☝️
    
-      ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-7.png)
+      ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-12.png)
+
+  2. Después de expandir las opciones de Shapes and Network, ingrese los datos necesarios para concluir el proceso de creación
+      ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-13.png)
   
-      > **Nota:** Recuerda que tus máquinas virtuales deben estar en ADs diferentes. Hay una máquina creada por defecto con el ambiente y que se encuentra en un AD en específico. Las nuevas máquinas deben ser creadas en los otros ADs que quedan
-      ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-6.png)
-      > _En el ejemplo, la máquina por defecto se encuentra en el AD1 así que las 2 nuevas máquinas deberán ser creadas en el AD 2 y el AD 3_
 
 4. Elige la imagen y el shape de tu MV. Haz clic en _"Change Image"_ para cambiar la imagen y en _"Change shape"_ para cambiar el shape
 
