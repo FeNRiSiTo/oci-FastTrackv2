@@ -143,22 +143,35 @@ Objetivos:
     * Virtual Cloud Network: "Tu VCN"
     * Subnet Compartment: "Tu Compartimento" (Creado por defecto en el ambiente)
     * Subnet: Subred Pública
+    * 
+   > **Nota:** Utilice la misma llave pública para ambas VMs
+   
 
   ### Paso 3: Acceder a la VM por el terminal
 
-  1. Copiamos la IP privada de una nuestras instancias
+  1. Navegue por medio del menu a Compute > Instances y copie la IP privada de la instancia
      
-     ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-18.png)
+     ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-9.png)
 
-  2. Volvemos al Escritorio Remoto, y en el terminal, hacemos la conexión con la máquina creada usando el siguiente comando
+     ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-25.png)
+
+     
+
+  2. En la terminal de la VM NoVNC, conectese a la máquina creada (VM-OracleLinux1) usando el siguiente comando:
 
      ```
-     ssh opc@<ip privado da VM>
+     ssh -i <llave privada ssh> opc@<ip privada VM> // ejemplo: ssh -i id_rsa opc@10.0.0.94
      ```
 
      * El usuario por defecto de las instancias Linux es OPC
+     * Pruebe también el acceso a la VM-OracleLinux-2 posteriormente
 
-     ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-17.png)
+     ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-26.png)
+
+     > **Nota:** Para desconectarse de la VM en el terminal NoVNC utilice el comando <logout>
+  
+  
+  3. Al completar esta tarea, verá que ahora tenemos 2 instancias de computo creadas junto con la instancia NoVNC, cada una en su propio dominio de disponibilidad (AD)
 
      **Super! Continuemos con el siguiente laboratorio 🤩👉 [Laboratorio 4 - Block Volume](https://github.com/kapvar9/oci-FastTrack-infraestructura/blob/main/Lab5-ObjectStorage/Readme.md)**
    
