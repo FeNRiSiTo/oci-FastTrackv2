@@ -52,6 +52,8 @@ b.	**Default Storage Tier:** Standard.
  
  ![imagen](../Lab5-ObjectStorage/Imagenes/bucket-6.png)
 
+ ![imagen](../Lab5-ObjectStorage/Imagenes/bucket-7.png)
+
 3.	Copie el html a continuación y cree el archivo index.html usando un editor de texto (bloc de notas) Nota: Recuerda guardar el archivo con la extensión ".html" 
     ```sh
         <!DOCTYPE html>
@@ -72,20 +74,20 @@ b.	**Default Storage Tier:** Standard.
 
     ```
 
-
 4.	Una vez hecho esto, arrástrelo y suéltelo en el campo del depósito indicado y haga clic en **Upload**.
-
- ![imagen](../Lab5-ObjectStorage/Imagenes/bucket-7.png)
-
-5.	Para el objeto, haga clic en el icono de tres puntos y haga clic en **View Object Details**.
 
 ![imagen](../Lab5-ObjectStorage/Imagenes/bucket-8.png)
 
-6. Haga clic en el URI indicado y verifique si el sitio está disponible. 
+
+5.	Para el objeto, haga clic en el icono de tres puntos y haga clic en **View Object Details**.
 
 ![imagen](../Lab5-ObjectStorage/Imagenes/bucket-9.png)
 
+6. Haga clic en el URI indicado y verifique si el sitio está disponible. 
+
 ![imagen](../Lab5-ObjectStorage/Imagenes/bucket-10.png)
+
+![imagen](../Lab5-ObjectStorage/Imagenes/bucket-11.png)
 
 **Super! Continuemos con el siguiente laboratorio 🤩👉 [Laboratorio 6 - Load Balancer](https://github.com/kapvar9/oci-FastTrack-infraestructura/blob/main/Lab6-LoadBalancer/Readme.md)**
    
