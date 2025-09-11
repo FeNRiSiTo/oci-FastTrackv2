@@ -72,11 +72,12 @@ Objetivos:
      
 ### Paso 2: Crear 2 máquinas virtuales Oracle Linux
 
-1. En el menú 🍔, vamos a Compute ➡️ Instances
+1. Volviendo a la consola de OCI, en el menú principal, haga click en: Compute > Instances , a continuación "Create Instance"
+   > **Nota:** Verificar que su compartimiento esté seleccionado antes de crear la instancia
 
-   ![imagen](../Lab1-Compartimentos/Imagenes/lab1-5.png)
+   ![imagen](../Lab3-MaquinasVirtuales/imagenes/compute-9.png)
    
-2. En "Compute", haz clic en _"Create Instance"_, recuerda verificar que te encuentras en tu compartment correspondiente
+3. En "Compute", haz clic en _"Create Instance"_, recuerda verificar que te encuentras en tu compartment correspondiente
    
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-5.png)
 
@@ -100,7 +101,7 @@ Objetivos:
       ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-6.png)
       > _En el ejemplo, la máquina por defecto se encuentra en el AD1 así que las 2 nuevas máquinas deberán ser creadas en el AD 2 y el AD 3_
 
-3. Elige la imagen y el shape de tu MV. Haz clic en _"Change Image"_ para cambiar la imagen y en _"Change shape"_ para cambiar el shape
+4. Elige la imagen y el shape de tu MV. Haz clic en _"Change Image"_ para cambiar la imagen y en _"Change shape"_ para cambiar el shape
 
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-8.png)
 
@@ -117,11 +118,11 @@ Objetivos:
 
     ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-12.png)
 
-4. Selecciona la VCN y la subnet pública creadas por defecto, y eliga la opción de _"Asignar una dirección IPv4 pública"_
+5. Selecciona la VCN y la subnet pública creadas por defecto, y eliga la opción de _"Asignar una dirección IPv4 pública"_
 
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-13.png)
 
-5. Colocamos la llave pública SSH creada en el paso 3 y clic en _"Create"_
+6. Colocamos la llave pública SSH creada en el paso 3 y clic en _"Create"_
 
    ![imagen](../Lab3-MaquinasVirtuales/imagenes/lab3-14.png)
 
