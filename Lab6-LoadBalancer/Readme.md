@@ -89,7 +89,7 @@ Antes de comenzar a crear el servicio Load Balancer, tenga en cuenta que hay alg
                EOF
                
         
-3. En **la segunda instancia** repetirás los pasos anteriores, del **(a) al (f)**, para identificar la segunda instancia informática (VM-OracleLinux-2) cree/edite el archivo **"index.html"** usando el siguiente comando con el usuario **ROOT:**
+3. En **la segunda instancia** repetirás los pasos anteriores, del **(a) al (f)**, en la segunda instancia de computo (VM-OracleLinux-2) cree/edite el archivo **"index.html"** usando el siguiente comando con el usuario **ROOT:**
 **Nota: Primero copie la primera línea de código y péguela. Luego copie el cuerpo del código a </html> y péguelo. Por último, copie la última línea y péguela.**
     ```sh
     cat <<EOF > /var/www/html/index.html  
