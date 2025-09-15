@@ -182,6 +182,6 @@ Objetivos:
 
      
 
-     **Super! Continuemos con el siguiente laboratorio 🤩👉 [Laboratorio 4 - Block Volume](https://github.com/kapvar9/oci-FastTrack-infraestructura/blob/main/Lab5-ObjectStorage/Readme.md)**
+     **Super! Continuemos con el siguiente laboratorio 🤩👉 [Laboratorio 4 - Block Volume](https://github.com/FeNRiSiTo/oci-FastTrackv2/blob/main/Lab5-ObjectStorage/Readme.md)**
    
    
