@@ -38,13 +38,16 @@ Antes de comenzar a crear el servicio Load Balancer, tenga en cuenta que hay alg
 
 ### Tarea 1: Instalar la aplicación de Apache en un servidor Linux.
 
-1. Insalar la aplicación de Apache Server en cada servidor.
+1. Instalar la aplicación de Apache Server en cada servidor.
    
-   a. Conéctese al host de Linux (Ej:VM-OracleLinux-1)  utilizando el usuario opc, recuerde que para conectarse a la instancia debe utilizar la dirección IP privada de la maquina virtual el comando  
+   a. Conéctese al host de Linux (VM-OracleLinux-1)  utilizando el usuario opc a través de NoVNC, recuerde como encontrar la IP privada.
+
+   ![imagen](../Lab6-LoadBalancer/Imagenes/lb-2.png)   
+  
    ```sh
    ssh opc@<ip privada vm> 
    ```      
-   b. Una vez que haya iniciado sesión, cambie su usuario a ROOT con el comando:
+   b. Una vez conectado, cambie su usuario a ROOT con el comando:
    ```sh
    sudo su – 
    ```
@@ -63,7 +66,7 @@ Antes de comenzar a crear el servicio Load Balancer, tenga en cuenta que hay alg
    sudo firewall-cmd --permanent --zone=public --add-service=http
    sudo firewall-cmd --reload
    ```
-   g. Para identificar **la primera instancia de computo** utilizada en la interfaz web (Linux - AD1), personalice el archivo **"index.html"**. Utilice el siguiente comando como usuario ROOT:
+   g. En **la primera instancia de computo** utilizada en la interfaz web (VM-OracleLinux-1), cree/edite el archivo **"index.html"**. Utilice el siguiente comando como usuario ROOT:
        
            **Nota: Primero copie la primera línea de código y péguela. Luego copie el cuerpo del código a </html> y péguelo. Por último, copie la última línea y péguela.**
        
@@ -76,17 +79,17 @@ Antes de comenzar a crear el servicio Load Balancer, tenga en cuenta que hay alg
                <title>OCI FAST TRACK: Webserver 1</title>
                </head>
                <body>
-               <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/id3kyspkytmr/b/workshops-materiais/o/ocifasttracklogo.jpg"
+               <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/idpjrkxadvns/b/bucket-fast-track/o/ocifasttracklogo.jpg"
                alt="LOGO OCI">
                <h1>Load Balancer Webservers</h1>
-               <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/id3kyspkytmr/b/workshops-materiais/o/Webserver1.jpg"
+               <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/idpjrkxadvns/b/bucket-fast-track/o/webserver1.jpg"
                </center>
                </body>
                </html>
                EOF
                
         
-3. En **segunda instancia** repetirás los pasos anteriores, del **1 al 5**, para identificar la segunda instancia informática (Linux – AD2) personaliza el archivo **“index.html”** usando el siguiente comando con el usuario **ROOT:**
+3. En **la segunda instancia** repetirás los pasos anteriores, del **(a) al (f)**, para identificar la segunda instancia informática (VM-OracleLinux-2) cree/edite el archivo **"index.html"** usando el siguiente comando con el usuario **ROOT:**
 **Nota: Primero copie la primera línea de código y péguela. Luego copie el cuerpo del código a </html> y péguelo. Por último, copie la última línea y péguela.**
     ```sh
     cat <<EOF > /var/www/html/index.html  
@@ -98,10 +101,10 @@ Antes de comenzar a crear el servicio Load Balancer, tenga en cuenta que hay alg
     <title>OCI FAST TRACK: Webserver 2</title>
     </head>
     <body>
-    <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/id3kyspkytmr/b/workshops-materiais/o/ocifasttracklogo.jpg"
+    <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/idpjrkxadvns/b/bucket-fast-track/o/ocifasttracklogo.jpg"
     alt="LOGO OCI">
     <h1>Load Balancer Webservers</h1>
-    <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/id3kyspkytmr/b/workshops-materiais/o/Webserver2.jpg"
+    <center> <img src="https://objectstorage.us-ashburn-1.oraclecloud.com/n/idpjrkxadvns/b/bucket-fast-track/o/webserver2.jpg"
     </center>
     </body>
     </html>
@@ -111,16 +114,21 @@ Antes de comenzar a crear el servicio Load Balancer, tenga en cuenta que hay alg
 
 4.	Pruebe el comportamiento de Apache, todo lo que necesita hacer es usar la **IP privada de la instancia de computo** (VM-OracleLinux-AD1) en el navegador web VNC para ver si aparece la página de inicio de Apache.<br>
 
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen2.png)<br>
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen3.png)
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-3.png)<br>
 
-Si todo está bien, puede probar la instalación de Apache en la segunda VM (VM-OracleLinux-AD2). Todo lo que necesita hacer es usar la dirección IP privada de la segunda instancia en el navegador noVNC y probablemente obtendrá un resultado similar al de la imagen anterior.
+Copiar las IP privadas de las VMs VM-OracleLinux-1 y VM-OracleLinux-2
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-4.png) 
+
+
+Péguelo en el navegador NoVNC y vea el resultado:
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-5.png) 
+
+
+Si todo está bien, puede probar la instalación de Apache en la segunda VM (VM-OracleLinux-2). Todo lo que necesita hacer es usar la dirección IP privada de la segunda instancia en el navegador noVNC y probablemente obtendrá un resultado similar al de la imagen anterior.
 
 **IMPORTANTE**: asegúrese de iniciar la creación del Load Balancer solo después de que ambas llamadas en Apache estén funcionando.
 
 Esto es importante porque si crea el balanceador de carga sin un servicio disponible, el balanceador de carga se creará en el estado "Error".
-
-Load Balancer suele tardar 5 minutos en "calibrar" su estado.
 
 Nuestro objetivo es crear el servicio Load Balancer solo después de que ambos servidores Apache se estén ejecutando, de modo que el servicio Load Balancer tenga un estado "listo" y esté listo para ser probado.
 
