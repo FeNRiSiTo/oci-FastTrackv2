@@ -2,9 +2,9 @@
 ## Introducción
 ### Overview
 
-El servicio Oracle Cloud Infrastructure Load Balancing proporciona distribución automatizada del tráfico desde un punto de entrada a varios servidores accesibles desde su red de nube virtual (VCN). El servicio ofrece un equilibrador de carga con su elección de dirección IP pública o privada y ancho de banda aprovisionado.
+El servicio Oracle Cloud Infrastructure Load Balancing proporciona distribución automatizada del tráfico desde un punto de entrada a varios servidores accesibles desde su red de nube virtual (VCN). El servicio ofrece un balanceador de carga con su elección de dirección IP pública o privada y ancho de banda aprovisionado.
 
-El servicio Load Balancer le permite crear un balanceador de carga público o privado en su VCN. Un equilibrador de carga público tiene una dirección IP pública a la que se puede acceder desde Internet. Un equilibrador de carga privado tiene una dirección IP de la subred de alojamiento, que solo es visible en su VCN. Puede configurar varias direcciones IP para una dirección IP para equilibrar la carga del tráfico de Capa 4 y Capa 7 (TCP y HTTP). Los balanceadores de carga públicos y privados pueden enrutar el tráfico de datos a cualquier servidor backend al que se pueda acceder desde la VCN.
+El servicio Load Balancer le permite crear un balanceador de carga público o privado en su VCN. Un balanceador de carga público tiene una dirección IP pública a la que se puede acceder desde Internet. Un balanceador de carga privado tiene una dirección IP de la subred de alojamiento, que solo es visible en su VCN. Puede configurar varias direcciones IP para una dirección IP para equilibrar la carga del tráfico de Capa 4 y Capa 7 (TCP y HTTP). Los balanceadores de carga públicos y privados pueden enrutar el tráfico de datos a cualquier servidor backend al que se pueda acceder desde la VCN.
 
 Su Load Balancer tiene un backend definido para enrutar el tráfico entrante a sus instancias informáticas. El conjunto de backend es una entidad lógica que incluye:
 
@@ -133,13 +133,12 @@ Esto es importante porque si crea el balanceador de carga sin un servicio dispon
 Nuestro objetivo es crear el servicio Load Balancer solo después de que ambos servidores Apache se estén ejecutando, de modo que el servicio Load Balancer tenga un estado "listo" y esté listo para ser probado.
 
 ### Tarea 2: Crear una aplicación en Alta Disponibilidad (HA) con un Load Balancer y 2 servidores web.
-1.	Para acceder a la interfaz de Load Balancer, una vez más, comencemos desde “Menú principal > Load Balancers” <br>
+1.	Para acceder a la interfaz de Load Balancer, una vez más, comencemos desde “Menú principal > Networking > Load Balancers” <br>
 
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen4.png)
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-6.png)
 Posteriormente haga clic sobre "Create Load Balancer" <br>
 
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen5.png)
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen6.png)
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-7.png)
 
 2. La pantalla de creación del Load Balancer es una plantilla basada en un asistente, donde se le guiará a través del proceso a través de la interfaz. En la pantalla principal, proporcionará la siguiente información:
 - **Nombre**: lb-apache
@@ -148,30 +147,35 @@ Posteriormente haga clic sobre "Create Load Balancer" <br>
 - **VCN:** <Seleccione su VCN>
 - **Subred:** <Seleccione su subred privada>
 *Elija la subred, la misma subred donde se crearon sus instancias de computo*<br>
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen7.png) <br>
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen8.png) <br>
-3.	Establezca la política del Load Balancer y agregue los servidores backend. Para agregar servidores backend, haga clic en el botón azul **"Add backends"** <br>
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-8.png) <br>
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-9.png) <br>
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-10.png) <br>
+3.	Establezca la política del Load Balancer y agregue los servidores backend. Para agregar servidores backend, haga clic en el botón azul **"Add Instances"** <br>
 
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen9.png)
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-11.png)
 
 4. Inserte los servidores del conjunto de backend (sus dos máquinas virtuales Linux):
 
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen10.png)
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-12.png) <br>
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-13.png) <br>
 
-5. Como último paso, definir el tipo de tráfico que se manejará. <br>
 
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen11.png)
+5. Como último paso, defina el tipo de tráfico que se manejará. <br>
+
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-14.png) <br>
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-15.png) <br>
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-16.png) <br>
 
 Una vez completado el proceso de creación, tendrás la siguiente información: <br>
 
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen12.png)
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-17.png) <br>
 
 #### Probando nuestro Load Balancer
 
-6. Para simular un entorno de aplicación, necesitamos iniciar un servicio web en ambas instancias de Computo.
+6. Para simular un entorno de aplicación, llamaremos a la IP Privada del Load Balancer (para encontrar la IP privada vea el ejemplo en la imagen anterior) en el navegador NoVNC y luego dirigirá el tráfico a las 2 VMs Linux previamente creadas y agregadas como backends del Load Balancer.
 *Para obtener resultados diferentes de las llamadas del Load Balancer, agregue contenido diferente al archivo Index.html en cada cálculo.*
-![imagen](../Lab6-LoadBalancer/Imagenes/Imagen13.png)
-7. Utilice la IP privada del equilibrador de carga en el navegador noVNC para ver que su aplicación se dirige a los 2 servidores con diferentes respuestas en el archivo Index.html.
+![imagen](../Lab6-LoadBalancer/Imagenes/lb-18.png) <br>
+7. Utilice la IP privada del balanceador de carga en el navegador noVNC para ver que su aplicación se dirija a los 2 servidores con diferentes respuestas en el archivo **index.html.**
 
 **Super! Continuemos con el siguiente laboratorio 🤩👉 [Laboratorio 7 - Autonomous Database](https://github.com/kapvar9/oci-FastTrack-infraestructura/blob/main/Lab7-AutonomousDB/Readme.md)**
 
